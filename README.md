@@ -4,6 +4,9 @@
 
 Git Mono is a SaaS platform that simplifies working with monorepos and multi-repo projects, helping development teams collaborate more effectively.
 
+**IMP**
+Don't forget to add your neon db connection link in both env files as that 'will' cause error when you run the project
+
 ## Features
 
 - **Unified Dashboard** - View all repositories, branches, and pull requests in one place
