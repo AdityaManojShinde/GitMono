@@ -2,6 +2,7 @@ import Link from "next/link";
 
 import { LatestPost } from "@/app/_components/post";
 import { api, HydrateClient } from "@/trpc/server";
+import { Button } from "@/components/ui/button";
 
 export default async function Home() {
   const hello = await api.post.hello({ text: "from tRPC" });
@@ -9,8 +10,8 @@ export default async function Home() {
   void api.post.getLatest.prefetch();
 
   return (
-    <div className="p-10 text-green-600">
-      <h1>Hi Aditya!</h1>
+    <div>
+      <Button>Click Me Destroy the World</Button>
     </div>
   );
 }
